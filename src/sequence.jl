@@ -233,7 +233,7 @@ end
 
 function Base.show(io::IO, seq::Sequence)
     if !get(io, :compact, false)
-        println(io, summary(seq), ':')
+        println(io, summary(seq), ':test:')
     end
     showcompact(io, seq)
 end
